@@ -1,0 +1,8 @@
+FROM node:alpine
+
+WORKDIR '/app/front'
+
+CMD ["npm","run","start"]
+
+#docker build -t samb2/dockerworkspace -f Dockerfile.dev .
+#docker run -p 3000:3000 -v $(pwd):/app/front samb2/dockerworkspace
